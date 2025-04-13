@@ -4,6 +4,12 @@ Este repositório contém os arquivos SQL utilizados para criar e popular o esqu
 
 - [Script de criação do esquema relacional (DDL)](tarefa01-create.sql)
 - [Script de inserção de dados (DML)](tarefa01-inserts.sql)
+- [Script de consulta - q01 (DQL)](tarefa01-q01.sql)
+- [Script de consulta - q04 (DQL)](tarefa01-q04.sql)
+- [Script de consulta - q08 (DQL)](tarefa01-q08.sql)
+- [Script de consulta - q12 (DQL)](tarefa01-q12.sql)
+- [Script de consulta - q16 (DQL)](tarefa01-q16.sql)
+
 
 ## NATURAL JOINS
 
