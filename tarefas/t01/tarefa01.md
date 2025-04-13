@@ -38,3 +38,31 @@ SELECT f.nome, g.nome
 FROM funcionario f
 JOIN gerente d ON f.codigo = g.codigo;
 ```
+## **CROSS JOINS**
+
+O **CROSS JOIN** é uma operação de junção no SQL que retorna o **produto cartesiano** entre duas ou mais tabelas. Isso significa que cada linha da primeira tabela será combinada com **todas** as linhas da segunda tabela, resultando em um número de linhas igual ao **número de linhas da primeira tabela multiplicado pelo número de linhas da segunda tabela**. Não há condições de junção envolvidas, pois é um mapeamento m x n.
+
+### Exemplo de **CROSS JOIN**:
+
+Imagine que temos duas tabelas: **produto** e **cor**.
+
+```sql
+CREATE TABLE produto (
+    codigo INT PRIMARY KEY,
+    nome VARCHAR(100)
+);
+
+CREATE TABLE cor (
+    codigo INT PRIMARY KEY,
+    cor_nome VARCHAR(50)
+);
+```
+
+Um CROSS JOIN entre essas tabelas seria:
+
+```sql
+SELECT p.nome, c.cor_nome
+FROM produto p
+CROSS JOIN cor c;
+```
+O resultado seria todas as combinações possíveis entre produtos e cores.
